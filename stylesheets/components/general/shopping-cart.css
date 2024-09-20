@@ -1,0 +1,24 @@
+
+#shopping-cart, #cart-header, #cart-subtotal {
+    border-radius: 20px 0 0 0;
+}
+
+#shopping-cart #cart-header {
+    background-color: #f9f9f9;
+}
+
+#shopping-cart #cart-header #label {
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+
+#shopping-cart #cart-subtotal {
+    background-color: #ffe6b7;
+    border-top-right-radius: 20px;
+}
+
+#shopping-cart #cart-subtotal .view-bag-btn {
+    background-color: #242628;
+    color: #ffffff;
+    border: none;
+}

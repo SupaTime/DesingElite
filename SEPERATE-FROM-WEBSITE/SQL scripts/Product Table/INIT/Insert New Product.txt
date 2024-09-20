@@ -1,0 +1,15 @@
+INSERT INTO products (product_name, price, description, thumbnail, rating, availability_status)
+VALUES ('Product Name', 29.99, 'This is a product description.', 'thumbnail_url.jpg', 4.5, 'In Stock');
+
+SET @product_id = LAST_INSERT_ID();
+
+INSERT INTO product_images (product_id, image_url)
+VALUES (@product_id, 'image1_url.jpg'),
+       (@product_id, 'image2_url.jpg');
+
+INSERT INTO product_tags (product_id, tag)
+VALUES (@product_id, 'Tag1'),
+       (@product_id, 'Tag2');
+       
+INSERT INTO product_reviews (product_id, review, review_date, reviewer_email, reviewer_fullname)
+VALUES (@product_id, 'Great product!', NOW(), 'reviewer@example.com', 'John Doe');

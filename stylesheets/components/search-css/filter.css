@@ -1,0 +1,8 @@
+nav#cloned-element.filter {
+    margin-top: 139px;
+}
+
+nav .container-filter {
+    background-color: rgb(246, 246, 246);
+    min-width: 228px;
+}

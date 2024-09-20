@@ -1,0 +1,102 @@
+
+/* Product Name */
+
+#front-page-main .fp-img-link h3 {
+    position: absolute;
+    bottom: 48px;
+    left: 24px;
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Nerko One", cursive;
+    z-index: 2;
+}
+
+#front-page-main .fp-img-link h4 {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    font-size: 1.3rem;
+    color: white;
+    z-index: 2;
+}
+
+#front-page-main .fp-img-link p.bottom-link {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    font-size: 0.85rem;
+    color: white;
+    z-index: 2;
+}
+
+#front-page-main .fp-img-link p.bottom-link::after {
+    content: "";
+    position: absolute;
+    background-color: white;
+    height: 2px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+}
+
+/* Shading */
+
+a.fp-img-link {
+    position: relative;
+}
+
+a.fp-img-link::before {
+    content: '';
+    background: linear-gradient(#00000016, #0000008a);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border-radius: 32px;
+    z-index: 1;
+}
+
+/* New Icon */
+
+a.fp-new i.new-icon {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    font-size: 55px;
+    color: white;
+    z-index: 2;
+}
+
+a.fp-new i.new-icon p.new-icon-text {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 1.25rem;
+    font-family: var(--ff-heading);
+    color: #ff5353;
+    z-index: 2;
+}
+
+a.fp-new:nth-child(even) i.new-icon {
+    color: #d63636;
+}
+
+a.fp-new:nth-child(even) i.new-icon p.new-icon-text {
+    color: #ffffff;
+}
+
+/* fp-new's Animation Hover */
+
+a.fp-img-link {
+    position: relative;
+}
+
+a.fp-img-link img {
+    transition: transform 0.3s;
+}
+
+a.fp-img-link:hover img {
+    transform: scale(1.1)
+}
