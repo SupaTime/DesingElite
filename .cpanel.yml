@@ -1,0 +1,5 @@
+deployment:
+  branches:
+    main:
+      deploy:
+        - path: /home/wkrr0jo9k4e9/repositories/DesingElite
