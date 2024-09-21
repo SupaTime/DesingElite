@@ -67,7 +67,7 @@ if (cardContainer) {
 }
 
 
-fetch('https://xn--designlite-g7a.ca/api.php')
+fetch('/api.php')
 .then(response => response.json()) // Parse the JSON from the response
 .then(data => {
     // Display data on the page
