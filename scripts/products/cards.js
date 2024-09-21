@@ -74,8 +74,26 @@ if (cardContainer) {
 }
 
 
+fetch('../../db-connection.php')
+.then(response => response.json()) // Parse the JSON from the response
+.then(data => {
+    // Display data on the page
+    //const container = document.getElementById('data-container');
+    
+    // Iterate over the data and create HTML content
+    data.forEach(item => {
+        console.log(item);
+        /*
+        const div = document.createElement('div');
+        div.textContent = `ID: ${item.id}, Name: ${item.name}`; // Customize based on your table structure
+        container.appendChild(div);
+        */
+    });
+})
+.catch(error => console.error('Error fetching data:', error));
 
 
+/* 
 function getRecipesFromAPI (url) {
     fetch(url)
     .then(res => res.json())
@@ -245,3 +263,5 @@ function getRndProducts() {
     arrayOfUsedProducts.push(rndProducts);
     return rndProducts;
 }
+
+*/
