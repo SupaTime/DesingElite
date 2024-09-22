@@ -67,7 +67,7 @@ if (cardContainer) {
 }
 
 
-fetch('/db_connection_app')
+fetch('https://xn--designlite-g7a.ca/db_connection_app')
 .then(response => response.json()) // Parse the JSON from the response
 .then(data => {
     // Display data on the page
