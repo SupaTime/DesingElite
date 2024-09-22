@@ -67,7 +67,7 @@ if (cardContainer) {
 }
 
 
-fetch('/api.php')
+fetch('/db_connection_app')
 .then(response => response.json()) // Parse the JSON from the response
 .then(data => {
     // Display data on the page
